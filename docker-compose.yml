@@ -1,0 +1,24 @@
+###############################################################################
+#                          Generated on phpdocker.io                          #
+###############################################################################
+version: "3.1"
+services:
+    webserver:
+      image: nginx:latest
+      container_name: php-webserver
+      volumes:
+        - /home/developer:/home
+        - /home/developer/docker/php71/phpdocker/nginx/conf:/etc/nginx/conf.d
+      ports:
+        - "80:80"
+        - "443:443"
+      links:
+        - php-fpm
+    php-fpm:
+        build:
+            context: .
+            dockerfile: phpdocker/php-fpm/Dockerfile
+        container_name: php-php-fpm
+        volumes:
+            - /home/developer:/home
+            - /home/developer/docker/php71/phpdocker/php-fpm/php-ini-overrides.ini:/etc/php/7.1/fpm/conf.d/99-overrides.ini
