@@ -1,5 +1,10 @@
 # Websy Lamp with Docker
 
+### Requirements
+
+ - Docker - https://docs.docker.com/engine/installation/
+ - Docker Compose 3 - https://docs.docker.com/compose/install/
+
 ### Containers
 
 - Nginx
@@ -11,7 +16,7 @@
 
 ### Nginx
  
-[NGINX official docker hub] https://hub.docker.com/_/nginx/
+[NGINX official docker hub] - https://hub.docker.com/_/nginx/
 
 - Samples
   - laravel.conf
@@ -22,7 +27,7 @@
   
 ### PHP-FPM
  
-[PHP official docker hub] https://hub.docker.com/_/php/
+[PHP official docker hub] - https://hub.docker.com/_/php/
 
 - Switch php version
 
@@ -44,7 +49,21 @@ php-fpm:
 
 ### MariaDB
  
-[MariaDB official docker hub] https://hub.docker.com/_/mariadb/
+[MariaDB official docker hub] - https://hub.docker.com/_/mariadb/
 
 - Change env params
-  - 
+  - MYSQL_ROOT_PASSWORD=root       
+  - MYSQL_USER=root      
+  - MYSQL_PASSWORD=root
+  
+### MongoDB
+ 
+[MongoDB official docker hub] - https://hub.docker.com/_/mongo/
+
+### PhpMyAdmin 
+ 
+[PhpMyAdmin official docker hub] - https://hub.docker.com/r/phpmyadmin/phpmyadmin/
+
+### NodeJS
+
+[NodeJS official docker hub] - https://hub.docker.com/_/node/
