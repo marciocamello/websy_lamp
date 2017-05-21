@@ -58,6 +58,7 @@ nginx-server:
 ```            
 
 - Samples
+
   - laravel.conf
   - codeigniter2.conf
   - codeigniter3.conf
@@ -108,6 +109,7 @@ mariadb:
 ```
 
 - Change env params
+
   - MYSQL_ROOT_PASSWORD=root       
   - MYSQL_USER=root      
   - MYSQL_PASSWORD=root
