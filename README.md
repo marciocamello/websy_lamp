@@ -4,6 +4,14 @@
 
  - Docker - https://docs.docker.com/engine/installation/
  - Docker Compose 3 - https://docs.docker.com/compose/install/
+ 
+### Usage
+
+```bash
+git clone https://github.com/marciocamello/websy_lamp.git
+cd websy_lamp
+docker-compose up -d
+```
 
 ### Containers
 
