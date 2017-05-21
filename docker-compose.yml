@@ -26,9 +26,6 @@ services:
         volumes:
             - /home/developer:/home
             - /home/developer/docker/websy_lamp/php-fpm/php.ini:/etc/php/7.1/fpm/conf.d/99-overrides.ini
-        links:
-            - mariadb
-            - mongodb
     mariadb:
         image: mariadb:latest
         container_name: websy-mariadb
@@ -57,9 +54,7 @@ services:
         volumes:
             - /home/developer/docker/websy_lamp/mongodb/data:/data/db
         ports:
-            - "27017:27017"  
-        links:
-            - nodejs    
+            - "27017:27017"    
     nodejs:
         image: node:6
         container_name: websy-nodejs
@@ -72,6 +67,4 @@ services:
         volumes:
             - /home/developer:/home
         links:
-            - mariadb
-            - mongodb
             - nginx-server
