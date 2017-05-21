@@ -1,1 +1,1 @@
-phpdocker/nginx/conf/*.conf
+nginx/conf/*.conf
