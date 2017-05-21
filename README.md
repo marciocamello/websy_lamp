@@ -12,6 +12,19 @@ git clone https://github.com/marciocamello/websy_lamp.git
 cd websy_lamp
 docker-compose up -d
 ```
+### Url access to Nginx, MariaDB, MongoDB, NodeJS
+
+ - your_ip:80 - Nginx
+ - your_ip:443 - Nginx with SSL
+ - your_ip:3306 - MariaDB
+ - your_ip:27017 - MongoDB
+ - your_ip:8009 - Nodejs
+ 
+### Hosts to use in internal applications 
+
+ - mariadb:3306
+ - php-fpm:9000
+ - mongodb:27017
 
 ### Containers
 
