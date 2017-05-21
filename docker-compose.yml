@@ -14,7 +14,9 @@ services:
         links:
             - php-fpm
             - mariadb
+            - mongodb
     php-fpm:
+        #image: php:5.6-fpm
         image: php:fpm
         container_name: websy-php-fpm
         restart: always
@@ -26,6 +28,7 @@ services:
             - /home/developer/docker/websy_lamp/php-fpm/php.ini:/etc/php/7.1/fpm/conf.d/99-overrides.ini
         links:
             - mariadb
+            - mongodb
     mariadb:
         image: mariadb:latest
         container_name: websy-mariadb
@@ -70,4 +73,5 @@ services:
             - /home/developer:/home
         links:
             - mariadb
+            - mongodb
             - nginx-server
