@@ -126,8 +126,8 @@ mongodb:
     command: mongod --noprealloc --smallfiles --replSet mongodb --dbpath /data/db --nojournal --oplogSize 16 --noauth
     container_name: websy-mongodb
     restart: always
-    volumes:
-        - /home/developer/docker/websy_lamp/mongodb/data:/data/db
+    #volumes:
+        #- /home/developer/docker/websy_lamp/mongodb/data:/data/db
     ports:
         - "27017:27017"  
     links:
